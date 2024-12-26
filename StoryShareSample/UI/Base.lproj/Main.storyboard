@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StoryShareSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="lEQ-dI-H2J">
+                                <rect key="frame" x="96.666666666666686" y="691.33333333333337" width="200" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u9x-A9-QpW">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="60"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="iconShareInstagram"/>
+                                        <connections>
+                                            <action selector="instagramStoryTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AbU-df-yS4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dF-Fj-0iK">
+                                        <rect key="frame" x="100" y="0.0" width="100" height="60"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="iconShareFacebook"/>
+                                        <connections>
+                                            <action selector="facebookStoryTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w9z-EX-WPX"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="99Y-Vh-gv3"/>
+                                    <constraint firstAttribute="height" constant="60" id="y6h-du-TU3"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H3O-kf-bPA">
+                                <rect key="frame" x="15" y="201" width="363" height="450"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kapadokya" translatesAutoresizingMaskIntoConstraints="NO" id="QVi-8E-a7t">
+                                        <rect key="frame" x="0.0" y="0.0" width="363" height="450"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Na4-3R-Fr7">
+                                        <rect key="frame" x="50" y="80" width="263" height="290"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="turkiye_brand_logo" translatesAutoresizingMaskIntoConstraints="NO" id="HQS-6S-ICY">
+                                                <rect key="frame" x="94" y="10" width="75" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="75" id="VkQ-Zp-ELb"/>
+                                                    <constraint firstAttribute="height" constant="40" id="yUn-c1-eJE"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kapadokya" translatesAutoresizingMaskIntoConstraints="NO" id="vyE-9B-pGu">
+                                                <rect key="frame" x="0.0" y="60" width="263" height="180"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="180" id="ige-vG-3ND"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cappadokia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q5D-C2-AWo">
+                                                <rect key="frame" x="84" y="250" width="95" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="q5D-C2-AWo" firstAttribute="centerX" secondItem="Na4-3R-Fr7" secondAttribute="centerX" id="4dj-vR-2QS"/>
+                                            <constraint firstAttribute="trailing" secondItem="vyE-9B-pGu" secondAttribute="trailing" id="9CU-RV-Jhh"/>
+                                            <constraint firstItem="HQS-6S-ICY" firstAttribute="top" secondItem="Na4-3R-Fr7" secondAttribute="top" constant="10" id="CLw-dN-HRc"/>
+                                            <constraint firstItem="q5D-C2-AWo" firstAttribute="top" secondItem="vyE-9B-pGu" secondAttribute="bottom" constant="10" id="OJh-bL-iqO"/>
+                                            <constraint firstItem="vyE-9B-pGu" firstAttribute="leading" secondItem="Na4-3R-Fr7" secondAttribute="leading" id="PfS-os-FYA"/>
+                                            <constraint firstItem="HQS-6S-ICY" firstAttribute="centerX" secondItem="Na4-3R-Fr7" secondAttribute="centerX" id="gOr-J0-xAN"/>
+                                            <constraint firstItem="vyE-9B-pGu" firstAttribute="top" secondItem="HQS-6S-ICY" secondAttribute="bottom" constant="10" id="pyu-Sh-L1e"/>
+                                            <constraint firstAttribute="bottom" secondItem="q5D-C2-AWo" secondAttribute="bottom" constant="10" id="tTH-kZ-7v2"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="QVi-8E-a7t" firstAttribute="top" secondItem="H3O-kf-bPA" secondAttribute="top" id="CVd-xg-Jdl"/>
+                                    <constraint firstAttribute="trailing" secondItem="Na4-3R-Fr7" secondAttribute="trailing" constant="50" id="DfI-Nd-wtC"/>
+                                    <constraint firstAttribute="bottom" secondItem="Na4-3R-Fr7" secondAttribute="bottom" constant="80" id="IJK-hj-uvQ"/>
+                                    <constraint firstItem="Na4-3R-Fr7" firstAttribute="top" secondItem="H3O-kf-bPA" secondAttribute="top" constant="80" id="ISJ-pg-jjE"/>
+                                    <constraint firstItem="Na4-3R-Fr7" firstAttribute="leading" secondItem="H3O-kf-bPA" secondAttribute="leading" constant="50" id="Ip0-O7-NVY"/>
+                                    <constraint firstItem="Na4-3R-Fr7" firstAttribute="centerX" secondItem="H3O-kf-bPA" secondAttribute="centerX" id="VwL-PA-6Vp"/>
+                                    <constraint firstItem="QVi-8E-a7t" firstAttribute="leading" secondItem="H3O-kf-bPA" secondAttribute="leading" id="hyy-So-Zkr"/>
+                                    <constraint firstAttribute="bottom" secondItem="QVi-8E-a7t" secondAttribute="bottom" id="r6w-Bq-VoB"/>
+                                    <constraint firstAttribute="trailing" secondItem="QVi-8E-a7t" secondAttribute="trailing" id="rNM-qM-HDh"/>
+                                    <constraint firstAttribute="height" constant="450" id="sxW-cE-IGN"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share Story" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="98D-Va-PCa">
+                                <rect key="frame" x="149.66666666666666" y="671" width="93.666666666666657" height="20.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="H3O-kf-bPA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="7t2-y7-dSd"/>
+                            <constraint firstItem="lEQ-dI-H2J" firstAttribute="top" secondItem="98D-Va-PCa" secondAttribute="bottom" id="Afv-Wd-SbJ"/>
+                            <constraint firstItem="98D-Va-PCa" firstAttribute="top" secondItem="H3O-kf-bPA" secondAttribute="bottom" constant="20" id="AuE-PY-cmz"/>
+                            <constraint firstItem="H3O-kf-bPA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GSb-rI-sMT"/>
+                            <constraint firstItem="H3O-kf-bPA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="WW9-MK-JqX"/>
+                            <constraint firstItem="lEQ-dI-H2J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aln-Nt-uQs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="H3O-kf-bPA" secondAttribute="trailing" constant="15" id="cff-sp-ibZ"/>
+                            <constraint firstItem="98D-Va-PCa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="znj-I0-2SU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnFacebook" destination="1dF-Fj-0iK" id="zAA-KX-KFx"/>
+                        <outlet property="btnInstagram" destination="u9x-A9-QpW" id="0lU-qs-8gX"/>
+                        <outlet property="containerView" destination="H3O-kf-bPA" id="asC-aJ-J2M"/>
+                        <outlet property="imgBlur" destination="QVi-8E-a7t" id="qIX-31-9Je"/>
+                        <outlet property="imgLocation" destination="vyE-9B-pGu" id="CUk-5O-6PC"/>
+                        <outlet property="subView" destination="Na4-3R-Fr7" id="YXj-nb-3Oh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="iconShareFacebook" width="42" height="42"/>
+        <image name="iconShareInstagram" width="42" height="42"/>
+        <image name="kapadokya" width="612" height="408"/>
+        <image name="turkiye_brand_logo" width="664" height="358"/>
+    </resources>
+</document>
