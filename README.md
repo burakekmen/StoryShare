@@ -1,5 +1,6 @@
-# Social Media (Facebook, Instagram) Story Share in iOS App
+# Social Media Story Share in iOS App
 
+Easily Way Story Sharing on Facebook, Instagram
 
 <img
   src="https://github.com/burakekmen/StoryShare/blob/main/SS/sample.gif"
